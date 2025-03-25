@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+#root {
+  text-align: center;
+}
+.bg-1 {
+  background-color: var(--clr-surface-10);
+}
+.profile-picture {
+  border-radius: 50%;
+}
+.hireMe-btn,
+.visit-btn {
+  background-color: #8d7cff;
+}
+.box {
+  background-color: #282828;
+}
+.nav-hover-a:hover {
+  /* background-color: #908e97; */
+  color: #7468ff;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
