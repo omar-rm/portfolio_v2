@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Game Hub",
       description:
         "A dinamic web application which displays some of the most popular video games, with the option to sort the games based on rating , gere, platform and relevance",
-      ImgUrl: gameHub,
+      imgUrl: gameHub,
       Url: "https://game-platform-project.vercel.app",
       techStack: ["react", "typescript", "javascript", "chakra"],
     },
@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="w-full h-7 border mb-3">
           <h3>MY PROJECTS</h3>
         </div>
-        <div className="w-full">
+        <div className="w-full p-3">
           {projects.map((project, index) => {
             return <ProjectCard key={index} {...project} />;
           })}
@@ -40,7 +40,7 @@ const Projects = () => {
 
 const ProjectCard = ({ title, description, imgUrl, Url, techStack }) => {
   return (
-    <div className=" grid grid-cols-5">
+    <div className=" grid grid-cols-5 gap-4 py-5">
       <div className="col-span-3">
         <img src={imgUrl} />
       </div>
